@@ -11,18 +11,18 @@ import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "What we pay",
+  desc: "We sell gold at online rate and we can make an online transaction and also bank transaction.",
   image: benefitOneImg,
   bullets: [
     {
       title: "Cash within 24 hours",
-      desc: "Then explain the first point breifly in one or two lines.",
+      desc: "We guarantee cash back within 24 hours.",
       icon: <EmojiHappyIcon />,
     },
     {
       title: "More Online Payment Options",
-      desc: "Here you can add the next benefit point.",
+      desc: "Google pay, Phone pe, Paypal and bank transaction available.",
       icon: <ChartSquareBarIcon />,
     },
     ,
@@ -42,7 +42,7 @@ const benefitOne = {
 
 const benefitTwo = {
   title: "How it works",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  desc: "We work all 7 days and 24 hours.",
   image: benefitTwoImg,
   bullets: [
     {

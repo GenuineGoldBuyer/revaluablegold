@@ -9,7 +9,6 @@ export default function Navbar() {
     "How it works",
     "What we pay",
     "Blog",
-    "About us",
   ];
 
   return (
@@ -97,7 +96,7 @@ export default function Navbar() {
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link href="/">
             <a className="px-6 py-2 text-white bg-yellow-600 rounded-md md:ml-5">
-            Find buyers in Chennai Districts
+            Sell Now
             </a>
           </Link>
 
