@@ -2,6 +2,7 @@ import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
+import Contact from "../components/Contact";
 
 import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
@@ -11,6 +12,7 @@ import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
+import axios from "axios";
 
 //import dynamic from "next/dynamic";
 
@@ -28,33 +30,30 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
+        <title>Revaluablegold.com | Sell Gold Online at Best market Rate</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="Revaluablegold.com is the best platform to get instant cash on hand"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
-
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        pretitle="Revaluablegold.money"
+        title=" Why should you sell to us">
+        Revaluablegold.com is online gold buyer platform. Our dealer is well experienced personnel in gold industry for nearly 22 years. He has been an employee in most renowned Jewellery shops. He values 100% honesty and Quality of Service over a cheap, low-grade services. And we can guarantee to return the merchandise, if you are not 100% satisfied with our service.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
-        pretitle="Watch a video"
-        title="Learn how to fullfil your needs">
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don't forget to add one. Just like this.
+      id="myForm"
+        pretitle="Customer Enquiry Form"
+        title="Submit your Form">
+        Our 20+ years experienced professional will get back to you through WhatsApp with Best quoted rate.
       </SectionTitle>
       <Video />
+      <Contact/>
       <SectionTitle
         pretitle="Testimonials"
         title="Here's what our customers said">
@@ -73,3 +72,4 @@ export default function Home() {
     </>
   );
 }
+

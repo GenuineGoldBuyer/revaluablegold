@@ -8,15 +8,6 @@
     "build": "next build",
     "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://gituhb.com/web3templates/nextly-template"
-  },
-  "keywords": [
-    "nextjs",
-    "tailwindcss",
-    "free"
-  ],
   "author": "Surjith S M",
   "license": "ISC",
   "dependencies": {
@@ -27,6 +18,8 @@
     "@headlessui/react": "^1.2.0",
     "@heroicons/react": "^1.0.1",
     "@tailwindcss/aspect-ratio": "^0.2.1",
+    "axios": "^0.27.2",
+    "googleapis": "^107.0.0",
     "next": "^11.1.0",
     "next-themes": "^0.0.14",
     "react": "^17.0.1",
