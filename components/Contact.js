@@ -8,6 +8,7 @@ export default function Contact() {
   const [Whatsappno, setWhatsappno] = useState('');
   const [Address, setAddress] = useState('');
   const [Code, setCode] = useState('');
+  const [Quantity, setQuantity] = useState('');
 
   function handleNameChange(event) {
     setName(event.target.value);
@@ -23,6 +24,9 @@ export default function Contact() {
   }
   function handleCodeChange(event) {
     setCode(event.target.value);
+  }
+  function handleQuantityChange(event) {
+    setQuantity(event.target.value);
   }
   async function handleSubmit(event) {
     event.preventDefault();
@@ -43,7 +47,17 @@ export default function Contact() {
         name: Name,
         contact: Code + Whatsappno,
         address: Address,
-        email: Email
+        quantity: Quantity,
+        description:
+        'Customer Name: ' +
+        Name +
+        '\n' +
+        'Address: ' +
+        Address +
+        '\n' +
+        'Quantity: ' +
+        Quantity,
+        email: Email,
       }),
       headers: {
         'Content-Type': 'application/json'
@@ -51,6 +65,7 @@ export default function Contact() {
     });
     alert('Form submitted. We will contact you shortly ;)');
     setCode('');
+    setQuantity('');
     setName('');
     setAddress('');
     setEmail('');
@@ -99,7 +114,7 @@ export default function Contact() {
               <input
                 id="Code"
                 name="entry.44547744"
-                className="appearance-none block w-full  text-white  rounded py-3 xs:py-1 px-2 leading-tight focus:outline-none  focus:border-gray-500"
+                className="appearance-none block w-full  text-white  rounded py-3 xs:py-1 px-2 xs:px-0 leading-tight focus:outline-none  focus:border-gray-500"
                 type="text"
                 placeholder="Eg. +971, +27 ..."
                 onChange={handleCodeChange}
@@ -107,7 +122,7 @@ export default function Contact() {
                 required
               />
             </div>
-            <div className="w-3/5 px-3 mb-6 xs:mb-0 md:mb-0">
+            <div className="w-3/5 px-3 xs:px-3 mb-6 xs:mb-0 md:mb-0">
               <label
                 htmlFor="whatsappno"
                 className="block uppercase tracking-wide text-white font-bold mb-2 xs:mt-3"
@@ -117,7 +132,7 @@ export default function Contact() {
               <input
                 id="whatsappno"
                 name="entry.902626710"
-                className="block appearance-none w-full   text-white py-3 xs:py-1 px-4 pr-8 rounded leading-tight focus:outline-none  focus:border-gray-500 "
+                className="block appearance-none w-full   text-white py-3 xs:py-1 px-4 xs:px-0 pr-8 rounded leading-tight focus:outline-none  focus:border-gray-500 "
                 type="text"
                 placeholder="WhatsApp No"
                 onChange={handleWhatsAppNoChange}
@@ -138,7 +153,7 @@ export default function Contact() {
                 className="appearance-none block w-full  text-white  rounded py-3 xs:py-1 px-4 leading-tight focus:outline-none  focus:border-gray-500"
                 id="city"
                 type="text"
-                placeholder="(Area, Chennai) or (City, Country)"
+                placeholder="Eg. Mylapore, Triplicane, Ennore, Vadapalani etc"
                 onChange={handleAddressChange}
                 value={Address}
                 autoComplete="off"
@@ -160,6 +175,25 @@ export default function Contact() {
                 placeholder="Mail ID"
                 onChange={handleEmailChange}
                 value={Email}
+                autoComplete="off"
+              />
+            </div>
+          </div>
+          <div className="flex flex-wrap -mx-3">
+            <div className="w-full px-3 mb-6 xs:mb-0">
+              <label
+                className="block uppercase tracking-wide text-white font-bold mb-2 xs:mt-3"
+                htmlFor="email"
+              >
+                Quantity of Gold
+              </label>
+              <input
+                className="appearance-none block w-full  text-white  rounded py-3 xs:py-1 px-4 leading-tight focus:outline-none  focus:border-gray-500"
+                id="city"
+                type="text"
+                placeholder="Eg, x grams or y kilo bars or z ounce bullions"
+                onChange={handleQuantityChange}
+                value={Quantity}
                 autoComplete="off"
               />
             </div>

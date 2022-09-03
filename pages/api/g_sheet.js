@@ -28,7 +28,9 @@ async function handler(req, res) {
     const name = req.body.name;
     const address = req.body.address;
     const contact = req.body.contact;
+    const quantity =  req.body.quantity;
     const email = req.body.email;
+    const description = "Ref: " + RefNo + "\n" + req.body.description;
 
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GENUINE_DATABASE_ID,
@@ -39,10 +41,11 @@ async function handler(req, res) {
         values: [
           [
             Timestamp,
-            name,
+            RefNo,
+            email,
+            quantity,
             contact,
-            address,
-            email
+            description
           ],
         ],
       },
