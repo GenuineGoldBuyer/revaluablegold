@@ -6,6 +6,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
     <Head>
+    <meta
+          name="google-site-verification"
+          content="v1poXjlmMFpZq_pysN4tyfMwHQG_UXRF6S1OAOjkeWQ"
+        />
     <script
           type="text/javascript" // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
@@ -21,6 +25,7 @@ function MyApp({ Component, pageProps }) {
             })();`
           }}
         ></script>
+        <link rel ="canonical" href="https://www.revaluablegold.money"/>
     </Head>
     <ThemeProvider attribute="class">
       <Component {...pageProps} />
