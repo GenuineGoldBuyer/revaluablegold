@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import Container from "./container";
 
-import userOneImg from "../public/img/user1.jpg";
-import userTwoImg from "../public/img/user2.jpg";
-import userThreeImg from "../public/img/user3.jpg";
+import userOneImg from "../public/img/user1.png";
+import userTwoImg from "../public/img/user2.jpeg";
+import userThreeImg from "../public/img/user3.jpeg";
 
 export default function Testimonials() {
   return (
@@ -13,45 +13,39 @@ export default function Testimonials() {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
+              Rate they provide are really <Mark>high</Mark>
+              than the other buyers.
             </p>
 
             <Avatar
               image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
+              name="Malini"
+              title="Stock Market Investor"
             />
           </div>
         </div>
-        <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+              I like the <Mark>Honesty and Integrity</Mark>
+              of the gold buyer. He is straight to point.
             </p>
-
             <Avatar
               image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
+              name="Evelin"
+              title="Jewellery Shop Owner"
             />
           </div>
-        </div>
-        <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I've seen. I
-              would use this for anything.
+            <p className="text-2xl leading-normal">
+              I was able to buy a property with the help of <Mark>Revaluablegold.money</Mark>within 3 hours.
             </p>
 
             <Avatar
               image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
+              name="Sheena"
+              title="Passionate Gold Buyer"
             />
           </div>
-        </div>
       </div>
     </Container>
   );

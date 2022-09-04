@@ -52,4 +52,9 @@ const faqdata = [
     answer:
       "We have 20+ years experienced trusted professional who value Honesty and integrity and Quality of service over cheap and low rated service",
   },
+  {
+    question: "Will the stones be added when weighing? ",
+    answer:
+      "Stones will be possibly removed before weighing or equivalent weight will be estimated lowly.",
+  },
 ];

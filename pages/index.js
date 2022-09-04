@@ -43,17 +43,19 @@ export default function Home() {
         title=" Why should you sell to us"
       >
         Revaluablegold.com is online gold buyer platform. Our dealer is well
-        experienced personnel in gold industry for nearly 22 years. He has been
-        an employee in most renowned Jewellery shops. He values 100% honesty and
-        Quality of Service over a cheap, low-grade services. And we can
-        guarantee to return the merchandise, if you are not 100% satisfied with
-        our service.
+        experienced personnel in gold industry for nearly 22 years. He values
+        100% honesty and Quality of Service over a cheap, low-grade services.
+        And we can guarantee to return the merchandise, if you are not 100%
+        satisfied with our service.
       </SectionTitle>
       <div id="whatwepay">
         <Benefits data={benefitOne} />
       </div>
 
-      <div id="howitworks"> <Benefits imgPos="right" data={benefitTwo} /></div>
+      <div id="howitworks">
+        {' '}
+        <Benefits imgPos="right" data={benefitTwo} />
+      </div>
 
       <div id="myForm">
         <SectionTitle pretitle="Customer Enquiry Form" title="Submit your Form">
@@ -66,15 +68,12 @@ export default function Home() {
       <SectionTitle
         pretitle="Testimonials"
         title="Here's what our customers said"
-      >
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
-      </SectionTitle>
+      ></SectionTitle>
       <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
+      <SectionTitle
+        pretitle="FAQ"
+        title="Frequently Asked Questions"
+      ></SectionTitle>
       <Faq />
       <Cta />
       <Footer />
