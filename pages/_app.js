@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
             })();`
           }}
         ></script>
-        <link rel ="canonical" href="https://www.revaluablegold.money"/>
+        <link rel ="canonical" href="https://revaluablegold.money"/>
     </Head>
     <ThemeProvider attribute="class">
       <Component {...pageProps} />
