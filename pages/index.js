@@ -28,11 +28,43 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Revaluablegold.money | Sell Gold Online at Best market Rate
+          Sell Gold Online at Best market Rate  | Revaluablegold.money
         </title>
         <meta
           name="description"
           content="Revaluablegold.money is the best platform to get instant cash on hand"
+        />
+          <meta
+          property="og:title"
+          content="Sell Gold Online at Best market Rate | Revaluablegold.money"
+        />
+        <meta
+          name="keywords"
+          content="gold buyers in chennai, how to sell gold in chennai, where to sell gold in chennai"
+        />
+        <meta property="og:site_name" content="Revaluablegold.money" />
+        <meta property="og:url" content="https://www.revaluablegold.money" />
+        <meta
+          property="og:description"
+          content="Revaluablegold.money is the best platform to get instant cash on hand"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://www.revaluablegold.money/img/heroImg.png"
+        />
+        <meta property="twitter:url" content="https://www.revaluablegold.money" />
+        <meta
+          property="twitter:title"
+          content="Sell Gold Online at Best market Rate | Revaluablegold.money"
+        />
+        <meta
+          property="twitter:description"
+          content="Revaluablegold.money is the best platform to get instant cash on hand"
+        />
+        <meta
+          property="twitter:image"
+          content="https://www.revaluablegold.money/img/heroImg.png"
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
